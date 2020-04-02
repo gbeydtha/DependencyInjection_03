@@ -12,8 +12,7 @@ namespace DependencyInjection_03
         static void Main(string[] args)
         {
             var containerBuilder = new ContainerBuilder();
-            containerBuilder.RegisterType<ConsoleNotification>().As<IConsoleNotification>();
-            containerBuilder.RegisterType<UserService>().AsSelf();
+            containerBuilder.RegisterModule<ProgramModule>(); 
 
             var container = containerBuilder.Build();
 
