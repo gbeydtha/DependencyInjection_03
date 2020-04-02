@@ -19,7 +19,7 @@ namespace DependencyInjection_03
             var notificationService = container.Resolve<IConsoleNotification>();
             var userService = container.Resolve<UserService>();  
 
-            var user = new User("Bidda");
+            var user = new User("Abul");
             userService.ChangeUserName(user, "Abul Hasan");
 
             Console.ReadKey(); 
